@@ -24,7 +24,7 @@ exports.loginAuth = async (req, res, _) => {
             password: req.body.password 
         });
         return res.status(200).json({
-            status:"You are successfully log in...",
+            status:200,
             token: token,
             username: emailRes.username
         });
